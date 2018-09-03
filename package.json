@@ -1,0 +1,27 @@
+{
+  "name": "card-valid",
+  "version": "1.0.0",
+  "description": "Verifica se o cartão de crédito é válido.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "cardValidator()"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CamilaBueno/Card-Valid.git"
+  },
+  "keywords": [
+    "validação",
+    "cartão",
+    "crédito"
+  ],
+  "author": "Camila Bueno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CamilaBueno/Card-Valid/issues"
+  },
+  "homepage": "https://github.com/CamilaBueno/Card-Valid#readme"
+}

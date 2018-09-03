@@ -6,8 +6,8 @@ function cardValidator() {
   
   
     if (!cardNumber || cardNumber.length != 16) {
-      //alert("Digite corretamente o número do seu cartão de crédito!");
-      return false;
+
+      return new Error("Digite corretamente o número do seu cartão de crédito");
     }
   
     for (var i = 0; i < cardNumber.length; i++) {
