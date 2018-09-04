@@ -1,16 +1,11 @@
-var mocha = require('mocha');
-var cardValidator = require("../index.js");
+const assert = require('assert');
+//const mocha = require("mocha");
+//const chai = require("chai");
+const cardValidator = require('../index');
+//const expect = chai.expect;
 
-describe("index", function() {
-
-    describe("cardValidator()", function() {
-  
-      describe("", function() {
-        it("should return an 0", function() {
-          expect(formatter.cardValidator("")
-        ).to.equal("0");
-        
+describe('cardValidator()', function() {
+    it('deve retornar true ou false', () => {
+      assert.equal(cardValidator(5234210210864429), 'true');
     });
-  });
-    });
-})
+});

@@ -1,8 +1,9 @@
-function cardValidator() {
+function cardValidator(cardNumber) {
     let result = 0;
     let multResult;
-    let cardNumber;
-    let cardNumberReverse = cardNumber.split('').reverse();
+   // let cardNumber;
+   let array = [];
+   array.push(cardNumber).split('').map(x => parseInt(x)).reverse();
   
   
     if (!cardNumber || cardNumber.length != 16) {
@@ -10,11 +11,11 @@ function cardValidator() {
       return new Error("Digite corretamente o número do seu cartão de crédito");
     }
   
-    for (var i = 0; i < cardNumber.length; i++) {
+    for (var i = 0; i < array.length; i++) {
       if (i % 2 !== 0) {
-        result += parseInt(cardNumber[i]);
+        result += array[i];
       } else {
-        multResult = cardNumber[i] * 2;
+        multResult = array[i] * 2;
         if (multResult >= 10) {
           multResult = multResult - 9;
         }

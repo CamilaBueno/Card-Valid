@@ -23,5 +23,9 @@
   "bugs": {
     "url": "https://github.com/CamilaBueno/Card-Valid/issues"
   },
-  "homepage": "https://github.com/CamilaBueno/Card-Valid#readme"
+  "homepage": "https://github.com/CamilaBueno/Card-Valid#readme",
+  "dependencies": {
+    "assert": "^1.4.1",
+    "mocha": "^5.2.0"
+  }
 }
