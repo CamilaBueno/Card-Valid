@@ -26,6 +26,7 @@
   "homepage": "https://github.com/CamilaBueno/Card-Valid#readme",
   "dependencies": {
     "assert": "^1.4.1",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "nyc": "^13.0.1"
   }
 }
