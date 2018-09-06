@@ -9,7 +9,7 @@ cardValidator(cardNumber);
 
 Exemplo de uso:
 $node
-> let cardValidator = require("Card-Valid")
+- let cardValidator = require("Card-Valid") 
   cardValidator(36490102462661); //'true'
 
 Versão 1.0.0
