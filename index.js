@@ -1,16 +1,18 @@
 function cardValidator(cardNumber) {
-  if (cardNumber === '') {
+  if (cardNumber === "") {
     return false;
   }
-  if (typeof cardNumber !== 'number') {
+  
+  if (typeof cardNumber !== "number") {
     return false;
   }
+
   let result = 0;
   let multResult;
 
-  cardNumber = cardNumber.toString().split('');
+  cardNumber = cardNumber.toString().split("");
 
-  for(var i = 0; i < cardNumber.length; i++) {
+  for(let i = 0; i < cardNumber.length; i++) {
     if(i % 2 !== 0) {
       result += parseInt(cardNumber[i]);
     } else {
@@ -22,11 +24,12 @@ function cardValidator(cardNumber) {
     }
   }
 
-  if (result % 10 === 0) {
-    return true;
-  } else {
+
+  if (result % 10 !== 0) {
     return false;
-  }
+  } 
+
+  return true;
 
 }
 
